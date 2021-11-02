@@ -1,11 +1,7 @@
 <?php
 
 $str = "Hello LaPlateforme!";
-
-echo "Hello LaPlateforme!";
-echo '<br>';
-echo $str;
-
-
+echo $str; //affiche hello la plateforme//
+echo $str; /*affiche hello la plateforme*/
 
 ?>

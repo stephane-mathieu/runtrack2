@@ -18,23 +18,23 @@ $mybool2 = false;
     </thead>
     <tbody>
         <tr>
-            <td>true</td>
-            <td>booléen</td>
+            <td>bool</td>
+            <td>$mybool</td>
             <td> <?php echo "$mybool"; ?></td>
         </tr>
         <tr>
-            <td>false</td>
-            <td>booléen</td>
+            <td>bool</td>
+            <td>$mybool2</td>
             <td> <?php echo "0"; ?></td>
         </tr>
         <tr>
             <td>int</td>
-            <td>entier</td>
+            <td>$val</td>
             <td><?php echo "$val"; ?></td>
         </tr>
         <tr>
             <td>str</td>
-            <td>chaîne de caractères</td>
+            <td>$str</td>
             <td><?php echo "$str"; ?></td>
         </tr>
         <tr>
