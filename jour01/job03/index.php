@@ -39,7 +39,7 @@ $mybool2 = false;
         </tr>
         <tr>
             <td>int</td>
-            <td>nombre à virgule flottante</td>
+            <td>$a</td>
             <td><?php echo "$a"; ?></td>
         </tr>
     </tbody>
