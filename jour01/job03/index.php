@@ -25,7 +25,7 @@ $mybool2 = false;
         <tr>
             <td>false</td>
             <td>booléen</td>
-            <td> <?php var_dump($mybool2); ?></td>
+            <td> <?php echo "0"; ?></td>
         </tr>
         <tr>
             <td>int</td>
