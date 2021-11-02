@@ -46,7 +46,7 @@ $mybool2 = false;
                 <td><?php echo "$str"; ?></td>
             </tr>
             <tr>
-                <td>int</td>
+                <td>float</td>
                 <td>$a</td>
                 <td><?php echo "$a"; ?></td>
             </tr>
