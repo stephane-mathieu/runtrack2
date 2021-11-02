@@ -25,7 +25,7 @@ $mybool2 = false;
             </tr>
         </thead>
         <tbody>
-             <tr>
+            <tr>
                 <td>bool</td>
                 <td>$mybool</td>
                 <td> <?php echo "$mybool"; ?></td>
