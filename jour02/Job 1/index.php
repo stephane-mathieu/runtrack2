@@ -8,7 +8,7 @@ function display_number(){
         $i++;
         echo '</br>';
         if($i == 42) {
-            echo "<b><u>$i</u></b>";
+            echo "<b><u>".$i."</u></b>";
         }
         else{
             echo $i;
