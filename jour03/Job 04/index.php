@@ -4,7 +4,7 @@
 function my_strlen($str){
 
 	$len = 0;
-	while($str[$len] != NULL)
+	while(isset($str[$len]))
 	{
 		$len = $len + 1;
 	}

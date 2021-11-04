@@ -5,7 +5,7 @@ function my_swap_str(){
     $str ="Certaines choses changent, et d'autres ne changeront jamais.";
     $i=0;
     $j=1;
-    while($str[$j] != NULL){
+    while(isset($str[$j])){
         $stock = $str[$i];
         $str[$i] = $str[$j];
         $str[$j] = $stock;
