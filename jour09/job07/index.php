@@ -9,6 +9,10 @@ $requette1 = mysqli_query($var,"SELECT SUM(`superficie`) FROM `etage`");
 
 $etudiant1 = mysqli_fetch_all($requette1,MYSQLI_ASSOC);
 
+$requette2 = mysqli_query($var,"SELECT * FROM `etage`");
+
+$etudiant2 = mysqli_fetch_all($requette2,MYSQLI_ASSOC);
+
 
 
 
@@ -29,15 +33,25 @@ $etudiant1 = mysqli_fetch_all($requette1,MYSQLI_ASSOC);
         <table>
          <thead>
                 <tr>
+                <th>id</th>
+                 <th>nom</th>
+                 <th>numero</th>
+                 <th>superficie</th>
                 <th>superficie_totale</th>
                 </tr>
             </thead>
         <tbody>
-            <tr>
-                <td>
-                    <?php foreach($etudiant1 as $tabe) {echo $tabe['SUM(`superficie`)']."<br>";} ?>
-                </td>
-            </tr>
+        <?php foreach ($etudiant2 as $st) {  ?>
+                    <tr>
+                        <td> <?= $st['id']; ?> </td>
+                        <td> <?= $st['nom']; ?> </td>
+                        <td> <?= $st['numero']; ?> </td>
+                        <td> <?= $st['superficie']; ?> </td>
+                                <td>
+                                    <?php  if($st['id'] == 1){foreach($etudiant1 as $tabe) {echo $tabe['SUM(`superficie`)']."<br>";}} ?>
+                                </td>
+                    </tr>
+            <?php }; ?>
         </tbody>
         </table>
     </div>

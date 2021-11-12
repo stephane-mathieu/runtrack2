@@ -44,7 +44,7 @@ $etudiant2 = mysqli_fetch_all($requette2,MYSQLI_ASSOC);
                         <td> <?= $st['id_etage']; ?> </td>
                         <td> <?= $st['capacite']; ?> </td>
                                 <td>
-                                    <?php foreach($etudiant2 as $tabetudiant2) {echo $tabetudiant2['AVG(`capacite`)']."<br>";} ?>
+                                    <?php  if($st['id'] == 1){foreach($etudiant2 as $tabetudiant2) {echo $tabetudiant2['AVG(`capacite`)']."<br>";}} ?>
                                 </td>
                     </tr>
             <?php }; ?>
